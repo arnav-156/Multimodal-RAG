@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "provider": "ollama",
+    "endpoint": "http://127.0.0.1:11434",
+    "identity": {
+      "model": "nomic-embed-text:latest",
+      "revision": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "native_dimension": 768,
+      "pooling": 1
+    },
+    "model_weight_format": "GGUF F16",
+    "artifact_bytes": 274302450,
+    "task": "retrieval",
+    "document_prefix": "search_document: ",
+    "query_prefix": "search_query: ",
+    "output_dimension": 768,
+    "dimension_reduction": "none",
+    "pooling_advertised": "mean (Ollama model_info pooling_type=1)",
+    "normalization": "client L2; normalized dequantized vectors at search",
+    "stored_codec": "L2/int8 round-and-clip at fixed scale 127",
+    "input_overflow": "reject; Ollama truncate=false",
+    "chunk_chars": 1000,
+    "max_input_chars": 4000,
+    "license": "Apache-2.0 (upstream Nomic model card)",
+    "reference": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5"
+  },
+  "additional_profiles": {
+    "jina": {
+      "manifest": "JINA_MODEL_MANIFEST.json",
+      "deployment": "docs/JINA_DEPLOYMENT.md",
+      "containment": "Application batch_size1 and service max-client-batch-size1/max-concurrent-requests1"
+    },
+    "ocr": {
+      "manifest": "OCR_MODEL_MANIFEST.json",
+      "deployment": "docs/OCR_DEPLOYMENT.md"
+    },
+    "audio": {
+      "manifest": "AUDIO_MODEL_MANIFEST.json",
+      "deployment": "docs/AUDIO_DEPLOYMENT.md"
+    },
+    "vision": {
+      "manifest": "VISION_MODEL_MANIFEST.json",
+      "deployment": "docs/VISION_DEPLOYMENT.md"
+    }
+  },
+  "scope": "Separately provisioned optional assets; no checkpoint or inference service is bundled."
+}

@@ -1,0 +1,24 @@
+# Copy to your project directory and set explicit roots before use.
+server:
+  host: 127.0.0.1
+  port: 8100
+scanner:
+  scan_paths: []
+database:
+  path: ./data/nomic-index.db
+embedding:
+  provider: ollama
+  api_url: http://127.0.0.1:11434
+  model: nomic-embed-text:latest
+  revision: 0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f
+  dimension: 768
+  native_dimension: 768
+  query_prefix: 'search_query: '
+  document_prefix: 'search_document: '
+  max_input_chars: 4000
+chunking:
+  max_chars: 1000
+ocr:
+  enabled: false
+vision:
+  endpoints: []

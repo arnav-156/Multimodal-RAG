@@ -1,0 +1,15 @@
+# Merge into an explicit local profile; select your own authorized roots separately.
+# Verify /api/tags and local artifact hashes before using this declared revision.
+vision:
+  max_workers: 1
+  max_retries: 1
+  endpoints:
+    - name: local-qwen3-vl
+      api_base: http://127.0.0.1:11434/v1
+      model: qwen3-vl:2b-instruct
+      revision: afc393e3572c07db0bc84aa460d928a16c75f3fbb9ca9e0dccc4fbd2dafb573e
+      enabled: true
+      max_tokens: 512
+      timeout: 300
+      max_parallel: 1
+      rate_limit: 0

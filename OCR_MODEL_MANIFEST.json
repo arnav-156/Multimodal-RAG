@@ -1,0 +1,145 @@
+{
+  "platform": "Windows x86_64",
+  "python": "3.13.18",
+  "ocr_substitution": false,
+  "embedding_substitution": false,
+  "runtime": {
+    "device": "cpu",
+    "configured_language": "ch",
+    "language_source": "local recognition checkpoint",
+    "detection_model": "PP-OCRv5_mobile_det",
+    "recognition_model": "PP-OCRv5_mobile_rec",
+    "cpu_threads": 2,
+    "startup_seconds": 10.460492099999101,
+    "python": "3.13.18 (main, Nov 11 2026, 00:19:14) [MSC v.1944 64 bit (AMD64)]",
+    "ram_rss_bytes": 334508032,
+    "outbound_python_socket_guard": true,
+    "denied_network_attempts": [],
+    "versions": {
+      "paddleocr": "3.3.2",
+      "paddlepaddle": "3.2.2",
+      "paddlex": "3.3.13",
+      "numpy": "2.5.5",
+      "opencv-contrib-python": "4.10.0.84"
+    }
+  },
+  "runtime_lock": "requirements-ocr-windows-py313.lock",
+  "runtime_lock_sha256": "cd193ed44b651701fbb179f5366e931f378486dbfce88da0b73781ae0b6bd12c",
+  "publisher_files": [
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_det",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7",
+      "file": "README.md",
+      "path": "models/ocr/PP-OCRv5_mobile_det/0d63e78e2b680928f6b1747d76a08db6e645efb7/README.md",
+      "bytes": 16243,
+      "sha256": "4cc20ad6d41af86b3ce9885ffb0956e152574a2eb14179aeb07fd2d3956161ca",
+      "publisher_integrity": "6ed97ac58de2375d7010fa6b7562b762d5e804f9"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_det",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7",
+      "file": "config.json",
+      "path": "models/ocr/PP-OCRv5_mobile_det/0d63e78e2b680928f6b1747d76a08db6e645efb7/config.json",
+      "bytes": 2871,
+      "sha256": "7ac1c33f377ba58561f4b89d3180b6add2b7c5c60a4edac90fa4e0ceccdc6665",
+      "publisher_integrity": "4fc190d78e4425094b31a2d3a4744a3623d00b50"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_det",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7",
+      "file": "inference.json",
+      "path": "models/ocr/PP-OCRv5_mobile_det/0d63e78e2b680928f6b1747d76a08db6e645efb7/inference.json",
+      "bytes": 229777,
+      "sha256": "05feef1acb00aa4cd7362b15f7f501fc4f99d7b1fa73c1c871e0c7b1504b0f5c",
+      "publisher_integrity": "6cd678f39460a27372f8fe570e4e12e7a383418f"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_det",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7",
+      "file": "inference.pdiparams",
+      "path": "models/ocr/PP-OCRv5_mobile_det/0d63e78e2b680928f6b1747d76a08db6e645efb7/inference.pdiparams",
+      "bytes": 4692937,
+      "sha256": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b",
+      "publisher_integrity": {
+        "sha256": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b",
+        "size": 4692937,
+        "pointerSize": 132
+      }
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_det",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7",
+      "file": "inference.yml",
+      "path": "models/ocr/PP-OCRv5_mobile_det/0d63e78e2b680928f6b1747d76a08db6e645efb7/inference.yml",
+      "bytes": 903,
+      "sha256": "98069072e1b6b37d727fd9d9f11725faa46d6ea0de012f2ed26caea011c37699",
+      "publisher_integrity": "579d10695d2dd6e85c5ecba02d151ae5c077aa49"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_rec",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85",
+      "file": "README.md",
+      "path": "models/ocr/PP-OCRv5_mobile_rec/682f20538d8c086cb2128e5cfac775e6c4904e85/README.md",
+      "bytes": 16075,
+      "sha256": "b02727443cef4904a9ee12accdfaf66fcbada7b93a1a05c40dde7582291ba28c",
+      "publisher_integrity": "07d22daf5a4654c6a60f7447337cd3ccd38ac179"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_rec",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85",
+      "file": "config.json",
+      "path": "models/ocr/PP-OCRv5_mobile_rec/682f20538d8c086cb2128e5cfac775e6c4904e85/config.json",
+      "bytes": 352253,
+      "sha256": "6df1587ae056f0b987125fc894b17f62ae3a12644fa2488d108f19377da9c1a8",
+      "publisher_integrity": "17e7b3034d8cd2247ff56d19d6b437c2d5fb8864"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_rec",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85",
+      "file": "inference.json",
+      "path": "models/ocr/PP-OCRv5_mobile_rec/682f20538d8c086cb2128e5cfac775e6c4904e85/inference.json",
+      "bytes": 217724,
+      "sha256": "24587345250c7332d0fc6f9a44e794d078cdaeb64c302fef906f325619de2569",
+      "publisher_integrity": "90f76a83768033cbd2bc9aa4d10aaa08e7bf25f7"
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_rec",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85",
+      "file": "inference.pdiparams",
+      "path": "models/ocr/PP-OCRv5_mobile_rec/682f20538d8c086cb2128e5cfac775e6c4904e85/inference.pdiparams",
+      "bytes": 16458665,
+      "sha256": "2460da90875937c94db97eba74ae3d9e5d4c4c57c42f1f41531c09a26bcc771a",
+      "publisher_integrity": {
+        "sha256": "2460da90875937c94db97eba74ae3d9e5d4c4c57c42f1f41531c09a26bcc771a",
+        "size": 16458665,
+        "pointerSize": 133
+      }
+    },
+    {
+      "model": "PaddlePaddle/PP-OCRv5_mobile_rec",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85",
+      "file": "inference.yml",
+      "path": "models/ocr/PP-OCRv5_mobile_rec/682f20538d8c086cb2128e5cfac775e6c4904e85/inference.yml",
+      "bytes": 148345,
+      "sha256": "5dfeb2777f6d0db8177d8128a8acfcf6e6276dc4ac73ea3bf0dc06d6a5e85d8e",
+      "publisher_integrity": "176f6d552a120e6fa0a812089fb36c1bb983ce28"
+    }
+  ],
+  "languages_exercised": [
+    "English clean print",
+    "Simplified Chinese clean print"
+  ],
+  "quality_scope": "generated PNG and two-page scanned/hybrid PDF engineering fixtures; not handwriting/rotation/production acceptance",
+  "input_limits": {
+    "max_request_bytes": 16777216,
+    "max_batch_images": 20,
+    "cpu_threads": 2,
+    "concurrent_request_slots": 1
+  },
+  "peak_memory": {
+    "Id": 7024,
+    "WorkingSet64": 584638464,
+    "PeakWorkingSet64": 647516160,
+    "CPU": 30.640625
+  }
+}

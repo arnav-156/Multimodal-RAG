@@ -1,0 +1,15 @@
+# Known limitations
+
+- This is single-user local file retrieval. It has no generated-answer endpoint, multi-user uploads, continuous watcher, video semantic search or local training loop.
+- Similarity is not a probability or proof of answer support. In a public financial page-excerpt experiment, dense Recall@5 was80%, BM2593% and fixed fusion91%. These local observations do not establish general superiority, contamination-free evaluation or an acceptable error rate for a different deployment. See [model card](../MODEL_CARD.md).
+- One winning chunk per file can omit complementary evidence. A research multi-passage screen was not integrated into the product contract. More complex ranking is not presumed better.
+- OCR can miss text. OCR-enabled raster-bearing PDF pages append bounded OCR while preserving native text; native logos/photos can add cost and duplicates. With OCR disabled, raster content is skipped and flagged. Complex tables, reading order, handwriting, noisy scans, accents and additional languages are not generally certified.
+- Extractor fingerprint5 refreshes previous processing on the next processing pass. Back up and use the intended OCR configuration; native pages with raster images need the configured OCR service when enabled.
+- The pinned Jina TEI backend has an unresolved batch/concurrency semantic defect. Keep application and service singleton caps; excess load may return provider503. A backend change requires actual semantic invariance tests, not only latency measurements.
+- Exact retrieval scans the eligible index. Increased concurrency can increase latency and reduce throughput. Short fixture tests and an8.5-minute active/idle/recovery observation do not prove leak freedom, a production SLA or the cause of an earlier service interruption.
+- File hashes express freshness, not policy authority or effective dates. Duplicate/history sources can remain legitimate evidence; blindly deleting old or duplicate sources can break retrieval or permissions.
+- Native parsers are not an OS sandbox. Root/version checks and local-only controls do not protect against every hostile document, local administrator or deployment threat.
+- Physical screen-reader speech, non-Chromium/touch behavior and broad deployment acceptance remain unverified. The source includes CI configuration; source archives without Git provenance cannot attest hosted history or successful hosted CI.
+- Models and optional converter runtimes must be separately provisioned. Commercial/redistribution terms for checkpoints and tools are independent from the application's license. Keep the supplied [third-party notices](../THIRD_PARTY_NOTICES.md).
+
+Future quality promotion requires target-relevant reviewed labels, grouped/time-separated holdouts, meaningful effect/error targets and controlled resource/permission regressions. Literal quote authenticity and complete source-unit coverage are distinct from semantic answer correctness; the evidence evaluator requires an external answer-bound review for the latter.

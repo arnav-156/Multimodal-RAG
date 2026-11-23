@@ -1,0 +1,46 @@
+{
+  "model": "qwen3-vl:2b-instruct",
+  "manifest_sha256": "afc393e3572c07db0bc84aa460d928a16c75f3fbb9ca9e0dccc4fbd2dafb573e",
+  "runtime": {
+    "version": "0.33.2"
+  },
+  "source": "https://ollama.com/library/qwen3-vl:2b-instruct",
+  "local_manifest": "<OLLAMA_MODELS>/manifests/registry.ollama.ai/library/qwen3-vl/2b-instruct",
+  "publisher_manifest_match": true,
+  "layers_verified": [
+    {
+      "media_type": "application/vnd.docker.container.image.v1+json",
+      "sha256": "2288b043131565ce643c8200cbfdec28f7621b84ffd7cc48336c812740e0b66a",
+      "bytes": 206
+    },
+    {
+      "media_type": "application/vnd.ollama.image.model",
+      "sha256": "bd2179e37645d5435e0214e5399e5997408a7e9685ba527cbb60726e6a32fd99",
+      "bytes": 1108016576
+    },
+    {
+      "media_type": "application/vnd.ollama.image.projector",
+      "sha256": "4dc7bc5863d7fc3ad784acf677f72f009ab5fd3758855f1996b678b621817190",
+      "bytes": 822540352
+    },
+    {
+      "media_type": "application/vnd.ollama.image.license",
+      "sha256": "7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+      "bytes": 11355
+    },
+    {
+      "media_type": "application/vnd.ollama.image.params",
+      "sha256": "f6417cb1e26962991f8e875a93f3cb0f92bc9b4955e004881251ccbf934a19d2",
+      "bytes": 42
+    }
+  ],
+  "capabilities": [
+    "completion",
+    "vision",
+    "tools"
+  ],
+  "quantization": "Q4_K_M",
+  "service_ownership": "Externally managed local Ollama service; application does not install, stop or reconfigure it.",
+  "license": "Apache-2.0",
+  "tested_profile": "config.vision-ollama.example.yaml"
+}

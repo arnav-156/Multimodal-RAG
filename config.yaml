@@ -1,0 +1,106 @@
+# Safe defaults: explicit roots, external local model services, no model downloads.
+# Compatibility-only fields remain accepted; see CONFIGURATION_COMPATIBILITY.md.
+server:
+  host: 127.0.0.1
+  port: 8100
+  cors_origins:
+  - http://127.0.0.1:8100
+  - http://localhost:8100
+security:
+  local_only: true
+  allow_cloud: false
+  allowed_hosts:
+  - localhost
+  - 127.0.0.1
+  - ::1
+database:
+  path: ./data/file_index.db
+scanner:
+  scan_paths: []
+  skip_dirs:
+  - .git
+  - node_modules
+  - __pycache__
+  - .cache
+  - .npm
+  - .local
+  - .venv
+  - .ssh
+  - .aws
+  - .gnupg
+  - .azure
+  - .kube
+  skip_files:
+  - .env
+  - .env.*
+  - .api_token
+  - id_rsa*
+  - id_ed25519*
+  - credentials
+  - '*.pem'
+  - '*.key'
+  - '*.p12'
+  - '*.pfx'
+metadata:
+  workers_per_disk: 2
+  file_timeout: 20.0
+  max_pending: 100
+embedding:
+  provider: openai
+  model: ''
+  revision: ''
+  dimension: 512
+  native_dimension: 1024
+  int8_scale: 127.0
+  query_prefix: 'Query: '
+  document_prefix: 'Document: '
+  api_url: ''
+  api_key: ''
+  allow_cloud: false
+  cloud_authorized: false
+  timeout: 120.0
+  batch_size: 4
+  max_input_chars: 32768
+  description_batch_size: 8
+  vllm:
+    api_url: http://127.0.0.1:8001
+    model_name: jinaai/jina-embeddings-v5-text-small-retrieval
+ocr:
+  api_url: http://127.0.0.1:8002
+  port: 8002
+  workers: 1
+  max_batch_images: 20
+  use_gpu: false
+  device: ''
+  lang: ch
+  enabled: false
+  timeout: 120.0
+  model_dir: ''
+  detection_model_dir: ''
+  recognition_model_dir: ''
+  allowed_roots: []
+  temp_dir: ./data/ocr-temp
+audio:
+  model_path: ''
+  timeout: 300.0
+  max_duration: 600.0
+chunking:
+  max_chars: 6000
+  overlap_ratio: 0.05
+  min_text_chars: 1
+  min_text_chars_low: 1
+limits:
+  min_media_bytes: 0
+  max_image_bytes: 104857600
+  max_text_file_bytes: 52428800
+  max_djvu_pages: 100
+  max_describe_pages: 20
+  max_pdf_pages: 100
+vision:
+  endpoints: []
+  max_retries: 2
+pipeline:
+  fetch_limit: 20
+search:
+  default_top_k: 50
+  max_top_k: 200

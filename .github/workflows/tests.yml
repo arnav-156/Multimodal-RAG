@@ -1,0 +1,38 @@
+name: regression
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22.23.5'
+          package-manager-cache: false
+      - name: Provision checksum-pinned project Python
+        run: python tools/provision_runtime.py --output ci-evidence/distribution.json
+      - name: Record actual runtime and require SQLite WAL patch
+        run: python tools/verify_runtime.py --output ci-evidence/runtime.json
+      - run: python -m pip install -r requirements.lock
+      - run: python -m pip check
+      - name: Verify installed graph against exact lock
+        run: python tools/verify_locked_environment.py --output ci-evidence/packages.json
+      - run: python -B -m pytest tests -q -p no:cacheprovider --junitxml=ci-evidence/tests.xml
+        env:
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
+      - run: python -B run_pipeline.py --help
+      - name: Record browser-test runtime
+        run: node --version > ci-evidence/node-version.txt
+      - name: Run browser ordering regressions
+        run: node --test --test-reporter=junit --test-reporter-destination=ci-evidence/browser-tests.xml tests/browser_intent.test.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-${{ matrix.os }}
+          path: ci-evidence/

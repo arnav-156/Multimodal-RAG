@@ -1,0 +1,24 @@
+{
+  "source_repository": "https://github.com/astral-sh/python-build-standalone",
+  "release": "20261110",
+  "download_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261110/cpython-3.13.18%2B20261110-x86_64-pc-windows-msvc-install_only_stripped.tar.gz",
+  "archive": ".runtime/cpython-3.13.18+20261110-x86_64-pc-windows-msvc-install_only_stripped.tar.gz",
+  "archive_bytes": 22367730,
+  "sha256": "2e0fed09d48989f64c9305da9ff2d37a41c0d13ab2aa6283405b2b620dfbf805",
+  "expected_sha256": "2e0fed09d48989f64c9305da9ff2d37a41c0d13ab2aa6283405b2b620dfbf805",
+  "installed_under": ".runtime/python-3.13.18",
+  "actual_runtime": {
+    "executable": ".runtime/python-3.13.18/python/python.exe",
+    "python_version": "3.13.18",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "base_prefix": ".runtime/python-3.13.18/python",
+    "sqlite_version": "3.53.1",
+    "sqlite_source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+    "sqlite_wal_fix_present": true,
+    "python_executable_sha256": "277cc80063daad88df858b0b01d0e449495d1feb2e93b3346bb216786fb6171f"
+  },
+  "requirements_lock_sha256": "73b47afa24fc2cf08e1293d59b4aa9e59fa0a197ebecd8201882c95ba89a78d6",
+  "project_interpreter": ".venv/patched/Scripts/python.exe"
+}

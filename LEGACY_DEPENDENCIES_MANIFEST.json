@@ -1,0 +1,182 @@
+{
+  "platform": "Windows x86_64 / patched CPython3.13.18",
+  "source": "Official release/registry assets; package hashes verified before execution",
+  "runtime_versions": {
+    "libreoffice": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b",
+    "calibre": "ebook-convert.exe (calibre 9.18.0)\nCreated by: Kovid Goyal <kovid@kovidgoyal.net>",
+    "antiword": "0.37 / MSYS2 package0.37-3",
+    "djvulibre": "3.5.29 / Windows package with DjView4.12",
+    "7zip": "26.06"
+  },
+  "packages": [
+    {
+      "name": "7z2606-x64.exe",
+      "url": "https://github.com/ip7z/7zip/releases/download/26.06/7z2606-x64.exe",
+      "sha256": "9b697f65ecc2d9b0152f5ee96d72dde522a7827690349d9307935dacf40f42ec",
+      "bytes": 1659704,
+      "path": ".runtime/legacy-converters/7z2606-x64.exe"
+    },
+    {
+      "name": "7zr.exe",
+      "url": "https://github.com/ip7z/7zip/releases/download/26.06/7zr.exe",
+      "sha256": "e80db2dad715a6c5adabe292d31ed54e11f4e9b99ca349827b50573b175891bc",
+      "bytes": 600064,
+      "path": ".runtime/legacy-converters/7zr.exe"
+    },
+    {
+      "name": "DjVuLibre-3.5.29_DjView-4.12_Setup.exe",
+      "url": "https://downloads.sourceforge.net/project/djvu/DjVuLibre_Windows/3.5.29+4.12/DjVuLibre-3.5.29_DjView-4.12_Setup.exe",
+      "sha256": "92233fbf891c63f3fb7a0b5e1ce108baa4c29a40c89a442d1313f883aae84670",
+      "bytes": 23642825,
+      "path": ".runtime/legacy-converters/DjVuLibre-3.5.29_DjView-4.12_Setup.exe"
+    },
+    {
+      "name": "calibre-portable-installer-9.18.0.exe",
+      "url": "https://github.com/kovidgoyal/calibre/releases/download/v9.18.0/calibre-portable-installer-9.18.0.exe",
+      "sha256": "bb3b5423e1d64a735322a006edce15c6fb012980c2c5e55c1c45eaeba21a28dc",
+      "bytes": 259196168,
+      "path": ".runtime/legacy-converters/calibre-portable-installer-9.18.0.exe"
+    },
+    {
+      "url": "https://mirror.kumi.systems/tdf/libreoffice/stable/26.8.3/win/x86_64/LibreOffice_26.8.3_Win_x86-64.msi",
+      "sha256": "0e6918c273eabbdbbd800ee0dacbbf130a14c13c2e4cec861b06dd59e015bf94",
+      "bytes": 376311808,
+      "publisher_reference": "libreoffice-publisher.html",
+      "name": "LibreOffice_26.8.3_Win_x86-64.msi",
+      "path": ".runtime/legacy-converters/LibreOffice_26.8.3_Win_x86-64.msi"
+    },
+    {
+      "url": "https://repo.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-antiword-0.37-3-any.pkg.tar.zst",
+      "sha256": "e5faf4c82a57ff1861d75c10fe3f51fb10c2dcb5d1a5d9fc7006701e3e23b8fb",
+      "bytes": 120866,
+      "version": "0.37-3",
+      "package": "mingw-w64-ucrt-x86_64-antiword",
+      "dependencies": [],
+      "name": "mingw-w64-ucrt-x86_64-antiword-0.37-3-any.pkg.tar.zst",
+      "path": ".runtime/legacy-converters/mingw-w64-ucrt-x86_64-antiword-0.37-3-any.pkg.tar.zst"
+    }
+  ],
+  "native_files": [
+    {
+      "relative_to_cache": "7zip/7z.exe",
+      "sha256": "dc0493429fe28136fcb177a0e77c9875cbb3b0bff5f2f8eeba4df302e98cef76",
+      "bytes": 574464
+    },
+    {
+      "relative_to_cache": "7zip/7z.dll",
+      "sha256": "500db9eb17f3c21b729ba41dd02ecfe1823da05028c7e4ba129084cc74cc364e",
+      "bytes": 1897984
+    },
+    {
+      "relative_to_cache": "djvu/djvused.exe",
+      "sha256": "cde02834971268ea99f04ed1a9c5bfcd284dcbb368d6073d02c00b67321fe644",
+      "bytes": 79872
+    },
+    {
+      "relative_to_cache": "djvu/djvutxt.exe",
+      "sha256": "20987b00bed44cdd5d0cb136c8f9cdb65a319af21b49009ac7cb3205fe1f6a23",
+      "bytes": 13824
+    },
+    {
+      "relative_to_cache": "djvu/ddjvu.exe",
+      "sha256": "5a3dba5d3630ea8947ddbc78fc470468cec1fe0b05d9ddd5957ccf00cf1f58bb",
+      "bytes": 80384
+    },
+    {
+      "relative_to_cache": "antiword/ucrt64/bin/antiword.exe",
+      "sha256": "1dde37af1bb049c03e71c9d20eb99a2a3e011fe9170306b3a154be5c8515788f",
+      "bytes": 228706
+    },
+    {
+      "relative_to_cache": "antiword/ucrt64/share/antiword/UTF-8.txt",
+      "sha256": "2401ee812ff859a85f3b737be7daf32f19c11946ecaa5f5e66468abae4fe2d43",
+      "bytes": 107
+    },
+    {
+      "relative_to_cache": "libreoffice-26.8.3/program/soffice.com",
+      "sha256": "be068e2a4c5b1f33d8d1562e5b367938329548c13ec42aed89b916005d7b1768",
+      "bytes": 523096
+    },
+    {
+      "relative_to_cache": "libreoffice-26.8.3/program/soffice.bin",
+      "sha256": "b96aa13d0bf7569a28fba0e50350679e2d9c3632593fc04382390f0d0c41f7e4",
+      "bytes": 2731352
+    },
+    {
+      "relative_to_cache": "calibre-native/Calibre Portable/Calibre/ebook-convert.exe",
+      "sha256": "12fa48d4d9a394eac7f2472d9742ee70711c3eee6d17bca2fe1ebb409fcfcfd1",
+      "bytes": 36104
+    }
+  ],
+  "optional_python_wheels": [
+    {
+      "package": "colorama",
+      "version": "0.4.6",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "bytes": 25335,
+      "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+      "fixture_writer_only": false
+    },
+    {
+      "package": "loguru",
+      "version": "0.8.0",
+      "sha256": "e0fba09d6f76ba2d2f4bd1757122942f5a670c702e988b5efaeab99dacba0069",
+      "bytes": 69409,
+      "filename": "loguru-0.8.0-py3-none-any.whl",
+      "fixture_writer_only": false
+    },
+    {
+      "package": "mobi",
+      "version": "0.4.1",
+      "sha256": "5490ea1d8e62c4d94352b6ba8eb117b9f9e5df2a1e8b38687c11d1f390cf86e5",
+      "bytes": 99813,
+      "filename": "mobi-0.4.1-py3-none-any.whl",
+      "fixture_writer_only": false
+    },
+    {
+      "package": "standard-imghdr",
+      "version": "3.13.0",
+      "sha256": "30a1bff5465605bb496f842a6ac3cc1f2131bf3025b0da28d4877d6d4b7cc8e9",
+      "bytes": 4639,
+      "filename": "standard_imghdr-3.13.0-py3-none-any.whl",
+      "fixture_writer_only": false
+    },
+    {
+      "package": "win32_setctime",
+      "version": "1.2.1",
+      "sha256": "a9edc685b35414bec69392c866ed82456ad125ac4a6a4b703ec1d8b462d4f477",
+      "bytes": 4215,
+      "filename": "win32_setctime-1.2.1-py3-none-any.whl",
+      "fixture_writer_only": false
+    },
+    {
+      "package": "xlwt",
+      "version": "1.3.0",
+      "sha256": "a082260524678ba48a297d922cc385f58278b8aa68741596a87de01a9c628b2e",
+      "bytes": 99981,
+      "filename": "xlwt-1.3.0-py2.py3-none-any.whl",
+      "fixture_writer_only": true
+    }
+  ],
+  "core_readers": {
+    "EbookLib": "0.21",
+    "xlrd": "2.0.2",
+    "openpyxl": "3.1.5",
+    "python-docx": "1.1.2",
+    "python-pptx": "1.0.2",
+    "beautifulsoup4": "4.15.0",
+    "lxml": "6.1.3",
+    "Pillow": "11.0.0",
+    "PyMuPDF": "1.26.7"
+  },
+  "runtime_lock": "requirements-legacy-windows-py313.lock",
+  "rar_fixture": {
+    "repository": "https://github.com/markokr/rarfile",
+    "revision": "d2f7df6fc843dae356fd6b0a85971dc36fd6e757",
+    "path": "test/files/rar3-subdirs.rar",
+    "sha256": "d3d4bd8c90b22fa01c11f460589499de06f9d28e076ec3762eea738c0903e874",
+    "git_blobs_verified": true,
+    "license_copy": "rarfile-LICENSE"
+  },
+  "scope": "Pinned compatibility/engineering profile. No general production, DRM, adversarial-parser sandbox or other-platform native-converter certification."
+}

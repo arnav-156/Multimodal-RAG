@@ -1,0 +1,25 @@
+database:
+  path: ./data/audio-cpp.db
+scanner:
+  scan_paths: []
+  home_paths: []
+embedding:
+  provider: ollama
+  api_url: http://127.0.0.1:11434
+  model: nomic-embed-text:latest
+  revision: 0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f
+  dimension: 768
+  native_dimension: 768
+  query_prefix: 'search_query: '
+  document_prefix: 'search_document: '
+  max_input_chars: 4000
+ocr:
+  enabled: false
+vision:
+  endpoints: []
+audio:
+  cpu_threads: 2
+  timeout: 30
+  max_duration: 60
+  cpp_executable: .runtime/whisper-cpp-v1.9.2/Release/whisper-cli.exe
+  cpp_model_path: models/audio/whisper.cpp/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.en.bin

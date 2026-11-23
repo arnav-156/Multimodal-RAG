@@ -1,0 +1,29 @@
+database:
+  path: ./data/ocr-library.db
+scanner:
+  scan_paths: []
+  home_paths: []
+embedding:
+  provider: ollama
+  api_url: http://127.0.0.1:11434
+  model: nomic-embed-text:latest
+  revision: 0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f
+  dimension: 768
+  native_dimension: 768
+  query_prefix: 'search_query: '
+  document_prefix: 'search_document: '
+  max_input_chars: 4000
+ocr:
+  enabled: true
+  api_url: http://127.0.0.1:8002
+  port: 8002
+  workers: 1
+  cpu_threads: 2
+  max_request_bytes: 16777216
+  lang: ch
+  device: cpu
+  timeout: 60
+  detection_model_dir: models/ocr/PP-OCRv5_mobile_det/0d63e78e2b680928f6b1747d76a08db6e645efb7
+  recognition_model_dir: models/ocr/PP-OCRv5_mobile_rec/682f20538d8c086cb2128e5cfac775e6c4904e85
+vision:
+  endpoints: []

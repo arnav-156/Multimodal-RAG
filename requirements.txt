@@ -1,0 +1,9 @@
+# Core runtime tested on patched CPython 3.13.18. Inference services are external.
+numpy==2.3.4
+requests==2.32.5
+PyYAML==6.0.3
+fastapi==0.124.2
+uvicorn==0.38.0
+pydantic==2.12.4
+itsdangerous==2.2.0
+Pillow==11.0.0

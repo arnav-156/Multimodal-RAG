@@ -1,0 +1,116 @@
+{
+  "artifact": {
+    "repo": "jinaai/jina-embeddings-v5-text-small-retrieval",
+    "revision": "6856e76bb72982e58de0620458a4e8b3614da340",
+    "gated": false,
+    "license": "cc-by-nc-4.0",
+    "files": [
+      {
+        "file": "1_Pooling/config.json",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/1_Pooling/config.json",
+        "bytes": 313,
+        "sha256": "37bf193fa101f19101bfad9c31d3eb0f786e247b7b1e5cb7f007d730eed1ddbd",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/1_Pooling/config.json"
+      },
+      {
+        "file": "README.md",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/README.md",
+        "bytes": 11600,
+        "sha256": "41420c9a2824a777f365246d0b011926b084e08a5924e4e82d8766ec0219f5e7",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/README.md"
+      },
+      {
+        "file": "config.json",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/config.json",
+        "bytes": 1510,
+        "sha256": "d6cc749796016b49553e3892f27184bd1cfc440f1ad1a7252e22e72dbfb5be90",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/config.json"
+      },
+      {
+        "file": "config_sentence_transformers.json",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/config_sentence_transformers.json",
+        "bytes": 274,
+        "sha256": "916dede36f621cdfecd30fde3d66923dc45336fe75e051b8839374800148b560",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/config_sentence_transformers.json"
+      },
+      {
+        "file": "model.safetensors",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/model.safetensors",
+        "bytes": 1192133232,
+        "sha256": "0362107c2b13e18284c5152c4d4f667a4dec4665abdfe4f5e43a9bb799ba2276",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/model.safetensors"
+      },
+      {
+        "file": "modules.json",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/modules.json",
+        "bytes": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/modules.json"
+      },
+      {
+        "file": "tokenizer.json",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/tokenizer.json",
+        "bytes": 11422654,
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/tokenizer.json"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "path": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/tokenizer_config.json",
+        "bytes": 670,
+        "sha256": "9da9b391de9bb545e047bdfd5d9abefe32ee41937acf6c3b06aae33d85d0a4b4",
+        "publisher_identity_verified": true,
+        "source": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small-retrieval/resolve/6856e76bb72982e58de0620458a4e8b3614da340/tokenizer_config.json"
+      }
+    ]
+  },
+  "runtime_image": "ghcr.io/huggingface/text-embeddings-inference@sha256:2538ea1c9640d3763b15af668039d24172d063b42337b0c27796fc2be180c78d",
+  "runtime_labels": {
+    "org.opencontainers.image.created": "2026-09-15T09:30:10.680Z",
+    "org.opencontainers.image.description": "A blazing fast inference solution for text embeddings models",
+    "org.opencontainers.image.licenses": "Apache-2.0",
+    "org.opencontainers.image.revision": "e80ef225ed0e6cb1717ce632a6a84b6cf211bb67",
+    "org.opencontainers.image.source": "https://github.com/huggingface/text-embeddings-inference",
+    "org.opencontainers.image.title": "text-embeddings-inference",
+    "org.opencontainers.image.url": "https://github.com/huggingface/text-embeddings-inference",
+    "org.opencontainers.image.version": "cpu-1.9.4"
+  },
+  "actual_service_info": {
+    "model_id": "/model",
+    "model_sha": "6856e76bb72982e58de0620458a4e8b3614da340",
+    "model_dtype": "float32",
+    "served_model_name": "jinaai/jina-embeddings-v5-text-small-retrieval",
+    "model_type": {
+      "embedding": {
+        "pooling": "last_token"
+      }
+    },
+    "max_concurrent_requests": 8,
+    "max_input_length": 512,
+    "max_batch_tokens": 512,
+    "max_batch_requests": 4,
+    "max_client_batch_size": 4,
+    "auto_truncate": false,
+    "tokenization_workers": 2,
+    "version": "1.9.4",
+    "sha": "e80ef225ed0e6cb1717ce632a6a84b6cf211bb67",
+    "docker_label": "sha-e80ef22"
+  },
+  "deployment_override": {
+    "origin": "local operational input cap; not a publisher artifact",
+    "file": "models/jina-embeddings-v5-text-small-retrieval/6856e76bb72982e58de0620458a4e8b3614da340/sentence_bert_config.json",
+    "sha256": "d51f4982a6db295ccc6436d007e2feea03d22e219f165375e74e8ee4f085b80e",
+    "max_seq_length": 512,
+    "native_model_context": 32768,
+    "weight_or_pooling_changed": false
+  },
+  "model_substitution": false,
+  "full_native_context_verified": false
+}

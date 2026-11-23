@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+.runtime/
+env/
+
+# Environment variables (contains API keys)
+.env
+.env.*
+!.env.example
+.api_token
+*.local.yaml
+*.local.yml
+/my-config.yaml
+/your-profile.yaml
+/restored-profile.yaml
+
+# Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs
+logs/
+*.log
+
+# Models (large binary files)
+models/
+
+# Data
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+segfault_trace.log
+*.pid
+
+# Local validation output and offline caches
+/.verification/
+/ci-evidence/
+/wheelhouse/
+/scratch/
+.pytest_cache/
+
+# Internal development evidence must stay outside a public source release
+/audit-*/
+/execution-*/
+/architecture-review-*/
+/adversarial-*/
+/frontend-*/
+/performance-*/
+/ml-research-*/
+/rag-research-*/
+/scientific-validation-*/
+/evolution-*/
+/completion-*/
+/continuation-*/
